@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main() {
+	int a,b,c;
+	int somme = 0;
+	float moyenne;
+	printf("entrer la valeur de a:");
+	scanf("%d",&a);
+	
+	printf("entrer la valeur de b:");
+	scanf("%d",&b);
+	
+	printf("entrer la valeur de c:");
+	scanf("%d",&c);
+	somme = a+b+c;
+	printf("somme = %d \n",somme);
+	moyenne = somme/3;
+	printf("moyenne = %f", moyenne);
+    
+    return 0;
+}

@@ -1,0 +1,18 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+	float TempF,TempC;
+	printf("donner la température en Fahrenheit :");
+	scanf("%f", &TempF);
+	TempC = (TempF - 32)/1.8;
+	printf("la température en Celsius : %f \n",TempC);
+	if(TempC == 0){
+		printf("la nature de la température :tres froid!!");
+	}else if(TempC > 0 && TempC < 18){
+		printf("la nature de la température :froid!");
+	}else if(TempC >= 10 && TempC < 28){
+		printf("la nature de la température :chaud!");
+	}else 
+	printf("la nature de la température :tres chaud!");
+return 0; 
+}

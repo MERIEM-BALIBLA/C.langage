@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+    int a, b, c;
+    float delta, r1, r2;
+
+    printf("saisir la valeur de a : ");
+    scanf("%d", &a);
+
+    printf("saisir la valeur de b : ");
+    scanf("%d", &b);
+
+    printf("saisir la valeur de c : ");
+    scanf("%d", &c);
+    delta = b * b - 4 * a * c;
+    printf("la valeur de delta :%f \n",delta);
+    if (delta > 0) {
+
+        r1 = (-b + sqrt(delta)) / (2 * a);
+        r2 = (-b - sqrt(delta)) / (2 * a);
+        printf("solution 1 : %.2f\n", r1);
+        printf("solution 2 : %.2f\n", r2);
+    } else if (delta == 0) {
+
+        r1 = -b / (2 * a);
+        printf("une seule solution : %.2f\n", r1);
+    } else {
+
+        double rP = -b / (2 * a);
+        double iP = sqrt(-delta) / (2 * a);
+        printf("solution 1 : %.2f + %.2fi\n", rP, iP);
+        printf("solution 2 : %.2f - %.2fi\n", rP, iP);
+    }
+
+    return 0;
+}

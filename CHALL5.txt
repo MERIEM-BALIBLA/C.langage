@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main() {
+	int x1,y1,x2,y2;
+	float MN;
+	printf("donner les cordonnés du point M :");
+	scanf("%d%d", &x1,&y1);
+	printf("donner les cordonnés du point N :");
+	scanf("%d%d", &x2,&y2);
+    MN =sqrt(pow(x2 - x1, 2) + pow(y2 - y1, 2));
+    printf("La distance MN est :%0.2f",MN);
+    return 0;
+}

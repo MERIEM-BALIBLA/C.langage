@@ -1,0 +1,13 @@
+#include<stdio.h>
+#include<stdlib.h>
+int main(){
+	int age = 23,num = 0626374624;
+	char charN[] = "MERIEM", charP[] = "BALIBLA";
+	char sexe[]="F";
+	printf("my FT name : %s \n",charN);
+	printf("my LT name: %s \n",charP);
+	printf("gender : %s \n",sexe);
+	printf("my age : %d \n",age);
+	printf("my number phone : %d",num);
+
+}

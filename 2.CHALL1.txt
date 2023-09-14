@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include<stdlib.h>
+#include<math.h>
+int main() {
+	int nbr;
+	printf("donner un nombre:");
+	scanf("%d", &nbr);
+	if(nbr % 2 == 0){
+		printf("c'est un nombre paire");
+	}else 
+		printf("c'est un nombre impaire");
+    return 0;
+}

@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+int main() {
+    int a, b;
+    
+    // Saisie de deux entiers
+    printf("Entrez la valeur de a : ");
+    scanf("%d", &a);
+    
+    printf("Entrez la valeur de b : ");
+    scanf("%d", &b);
+    
+    // Calcul des résultats
+    int somme = a + b;
+    int difference = a - b;
+    int produit = a * b;
+     printf("\nLes résultats :\n");
+        printf("a + b = %d\n", somme);
+        printf("a - b = %d\n", difference);
+        printf("a * b = %d\n", produit);
+    if (b != 0) {
+        float division =a / b;
+        int reste = a % b;
+        printf("a / b = %f\n", division);
+        printf("a %% b = %d\n", reste);
+    } else {
+        printf("ERROR");
+    }
+    
+    return 0;
+}
