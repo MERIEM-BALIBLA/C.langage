@@ -1,0 +1,28 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    char voyelle;
+    printf("saisir un voyelle :");
+    scanf("%c", &voyelle);
+    switch (voyelle){
+        case 'a':
+            printf("VOYELLE!!",voyelle);
+        break;
+        case 'o':
+            printf("VOYELLE!!",voyelle);
+        break;
+        case 'e':
+            printf("VOYELLE!!",voyelle);
+        break;
+        case 'i':
+            printf("VOYELLE!!",voyelle);
+        break;
+        case 'u':
+            printf("VOYELLE!!",voyelle);
+        
+        default :
+            printf("c'est pas un voyelle!!");
+    }
+   
+    return 0;}

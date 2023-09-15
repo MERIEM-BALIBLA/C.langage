@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    int i,n;
+    int pro;
+    printf("donner la valeur de n:");
+    scanf("%d", &n);
+    for(i=0;i<=10;i++){
+        pro = i * n;
+        printf("%d * %d = %d\n",i,n,pro);
+    }
+    return 0;
+}

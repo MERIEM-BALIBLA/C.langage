@@ -1,0 +1,15 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int main() {
+    int nombre, inverse;
+
+    printf("Entrez un nombre entier à trois chiffres : ");
+    scanf("%d", &nombre);
+    if (nombre < 1000) {
+         inverse = (nombre % 10) * 100 + ((nombre / 10) % 10) * 10 + nombre / 100;
+        printf("Veuillez entrer un nombre à trois chiffres.\n");
+    }
+    printf("Le nombre inversé est : %d\n", inverse);
+   
+    return 0;}
