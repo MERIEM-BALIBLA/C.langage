@@ -1,0 +1,14 @@
+#include <stdio.h>
+#include<stdlib.h>
+int main() {
+    int nbrA;
+    printf("donner nombre d'année:");
+    scanf("%d", &nbrA);
+    printf("%d est nombre d'années \n",nbrA);
+    printf("%d est nombre de mois \n",nbrA * 12);
+    printf("%d est le nombre de jours \n", (nbrA*12)*365);
+    printf("%d est le nombre d'heure \n",((nbrA*12)*365)*24);
+    printf("%d est le nombre de minutes \n",(((nbrA*12)*365)*24)*30);
+    
+    return 0;
+}

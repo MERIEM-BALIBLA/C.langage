@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+    char alb;
+
+    printf("Entrez un caractere : ");
+    scanf(" %c", &alb); 
+    if (alb >= 65 && alb <= 90) {
+        printf("%c majuscule.\n", alb);
+    } else {
+        printf("%c minuiscule.\n", alb);
+    }
+
+    return 0;
+}

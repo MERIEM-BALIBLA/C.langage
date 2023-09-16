@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+    int i;
+    float note;
+    float som= 0;
+    for(i=1;i<=4;i++){
+        printf("Donner la note : ");
+        scanf("%f", &note);
+        som += note;
+    }
+    printf("la somme des notes : %f \n",som);
+    float moy;
+    moy = som / 4;
+    printf("la moyenne générale :%f \n",moy);
+    if(moy < 10){
+        printf(" non admit!!");
+    }else if(moy > 10 && moy < 12){
+        printf("admit avec menssion passable");
+    }else if(moy > 12 && moy < 14){
+        printf("admit avec menssion bien");
+    }else if(moy > 14 && moy < 16){
+        printf("admit avec tres bien");
+    }
+    return 0;
+}

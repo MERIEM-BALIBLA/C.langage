@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    char car;
+
+    printf("Entrez un caractere : ");
+    scanf(" %c", &car); 
+    if(car >= 'A' && car <= 'Z'){
+          printf("est un alphabet \n");
+          if (car >= 65 && car <= 90) {
+                printf("%c majuscule.\n", car);
+          } else {
+          printf("%c minuiscule.\n", car);
+          }
+    }
+    else if(car >= 'a' && car <= 'z'){
+         printf("est un alphabet \n");
+         if (car >= 65 && car <= 90) {
+             printf("%c majuscule.\n", car);
+         } else {
+             printf("%c minuiscule.\n", car);
+         }
+    }else 
+        printf("c'est pas un alphabet \n");
+    
+    return 0;
+}
