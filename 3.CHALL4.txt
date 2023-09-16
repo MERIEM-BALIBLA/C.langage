@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdbool.h>
+int main() {
+    int n,som = 0,max = 0;
+    printf("donner un nombre jusqu'a (0):\n");
+    do{
+    scanf("%d", &n);
+	if(n > 0 && n < 100){
+		som += n;
+		if(n > max){
+			max = n;
+		}
+	}else if(n >=100){
+		printf("ignore");
+	}
+    }while(n != 0);
+ 	printf("Somme des elements : %d\n", som);
+    printf("Maximum des elements : %d\n", max);
+    return 0;  
+}

@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+    srand(time(NULL));
+    int jour = rand() % 7;
+    switch (jour) {
+        case 0:
+            printf("Le jour aléatoire de la semaine est : Lundi\n");
+            break;
+        case 1:
+            printf("Le jour aléatoire de la semaine est : Mardi\n");
+            break;
+        case 2:
+            printf("Le jour aléatoire de la semaine est : Mercredi\n");
+            break;
+         case 3:
+            printf("Le jour aléatoire de la semaine est : Jeudi\n");
+            break;
+        case 4:
+            printf("Le jour aléatoire de la semaine est : Vendredi\n");
+            break;
+        case 5:
+            printf("Le jour aléatoire de la semaine est : Samedi\n");
+            break;
+        case 6:
+            printf("Le jour aléatoire de la semaine est : Dimanche\n");
+            break;
+        default:
+            printf("Erreur : nombre aléatoire invalide\n");
+    }
+
+    return 0;
+}

@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdbool.h>
+int main() {
+    int n;
+    // Saisie de l'entier
+    printf("Entrez un entier : ");
+    scanf("%d", &n);
+    if (n <= 1) {
+        return false;
+    }
+        // Boucle pour tester la divisibilité par les entiers de 2 à la racine carrée de n
+    for (int i = 2; i * i <= n; i++) {
+    	
+        if (n % i == 0) {
+             printf("%d pas un nombre premier.\n", nombre);
+        }else 
+        	 printf("%d est un nombre premier.\n", nombre);
+
+    }    
+}
